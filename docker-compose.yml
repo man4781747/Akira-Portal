@@ -1,0 +1,15 @@
+# https://ithelp.ithome.com.tw/articles/10244961
+# https://ithelp.ithome.com.tw/articles/10221704
+version: '3'
+services:
+  nginx:
+    container_name: nginx-test
+    image: test-nginx:latest
+    ports:
+      - "8998:80"
+    volumes:
+      - ./frontendCodes/dist/index.html:/var/www/html/index.html
+      - ./frontendCodes/dist/static:/var/www/static
+      - ./nginxConfigs/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginxConfigs/default.conf:/etc/nginx/conf.d/default.conf
+    restart: always
