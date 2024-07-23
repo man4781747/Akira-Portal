@@ -12,7 +12,7 @@
     </header>
     <div class="hr-style" style="margin: 2rem 0;"></div>
     <section>
-      <img src="../../assets/ESP32-S3_IC.jpg" alt="esp32-s3" style="float:right;width:150px;">
+      <img src="@/assets/ESP32-S3_IC.jpg" alt="esp32-s3" style="float:right;width:150px;">
       <p class="paragraph">硬體相關專案</p>
       <p><em>因大多案例有保密需求，暫無法提供詳細內容</em></p>
       <p>
