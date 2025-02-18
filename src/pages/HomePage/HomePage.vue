@@ -9,6 +9,7 @@
       <tbody>
         <tr><th>2023-01-19</th><td>網頁開張拉</td></tr>
         <tr><th>2023-01-20</th><td>斜槓頁面&範例元件頁面完成</td></tr>
+        <tr><th>2025-02-05</th><td>時隔多年的更新</td></tr>
       </tbody>
     </table>
     <div class="hr-style" style="margin: 2rem 0;"></div>

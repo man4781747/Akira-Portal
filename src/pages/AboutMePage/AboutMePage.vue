@@ -26,7 +26,56 @@
     </div>
     <div class="hr-style" style="margin: 2rem 0;"></div>
     <h2 class="paragraph">擁有技能</h2>
-    <div class="skill-lsit">
+
+    <div class="" style="line-height: 2rem;">
+      <ul class="job-history-list">
+        <li class="job-group">
+          <p class="job-title">軟體相關技能</p>
+          <div class="job-description">
+            主要技能圍繞網頁前後端來學習
+            <ol>
+              <li class="job-type">
+                後端技能 - 主要使用語言: Python
+                <ul>
+                  <li>HTTP API Service 使用框架: <b>Flask、FastAPI、Django</b></li>
+                  <li>容器化相關使用經驗: <b>Docker、Docker-Compose</b></li>
+                  <li>接觸過的資料庫: <b>PostgreSQL, MongoDB, Redis, Splunk</b></li>
+                </ul>
+              </li>
+              <li class="job-type">
+                前端技能 - 主要使用 Vue2/Vue3
+                <ul>
+                  <li>輔助框架: <b>Vite</b></li>
+                  <li>常用CSS框架: <b> PostCSS, Bootstrap</b></li>
+                  <li>使用過的通訊協議: <b>HTTP/1.1、WebSocket</b></li>
+                </ul>
+              </li>
+              <li class="job-type">
+                硬體技能
+                <ul>
+                  <li>使用 MCU 經驗: <b>ESP32、ESP32-S3(較多)、Arduino</b></li>
+                  <li>常使用之通訊協議: <b>I2C、SPI、UART、RS485、CANBus、Modbus</b></li>
+                  <li>3D繪圖工具: <b>SolidWorks</b></li>
+                  <li>EDA工具: <b>EasyEDA (嘉立創線上工具)</b></li>
+                </ul>
+              </li>
+              <li class="job-type">
+                雲端相關技能
+                <ul>
+                  <li>主要使用雲端服務: <b>GCP</b></li>
+                  <ul>
+                    <li>多使用 <b>Compute Engine、Cloud Storage、Cloud function、Cloud Schedler、平衡附載、HTTPS憑證申請</b>...等功能</li>
+                  </ul>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="skill-lsit" v-if="false">
       <div class="skill-tag">語言 : Python</div>
       <div class="skill-tag">後端框架 : Django</div>
       <div class="skill-tag">後端框架 : Flask</div>
@@ -51,8 +100,39 @@
     <div class="" style="line-height: 2rem;">
       <ul class="job-history-list">
         <li class="job-group">
+          <p class="job-title">艾滴科技。自動化電控工程師</p>
+          <p class="job-date">2023/04 - 至今</p>
+          <div class="job-description">
+            主要負責設計、改善&製作自動化養殖所需之儀器，其中使用 ESP32-S3 為主要 MCU，在 Arduino 框架下製作自動化水質監測儀器
+            <ol>
+              <li class="job-type">
+                設計 IoT 相關儀器韌體，使儀器有複數 OTA 更新功能，令使用者可選擇透過操作網頁更新、自動檢測更新...等方法更新儀器
+              </li>
+
+              <li class="job-type">
+                使用 Vite 與 Vue3 製作儀器專用控制網站
+                <ul>
+                  <li>混合使用 WebSocket、HTTP 協議來使儀器具有即時操作能力且資源消耗降低</li>
+                </ul>
+              </li>
+              <li class="job-type">
+                使用 Solidwork 繪製儀器機構，並與廠商溝通製作
+              </li>
+              <li class="job-type">
+                使用 EDA 設計儀器及其感測器電路，並自行採購各式 IC 元件製作儀器所需模組
+              </li>
+              <li class="job-type">
+                化學試劑配置
+              </li>
+              <li class="job-type">
+                除程式與硬體端設計外，另有為現有儀器進行優化、降低成本以及使用市購件取代訂製件...等工作內容
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="job-group">
           <p class="job-title">國泰人壽。資料工程師</p>
-          <p class="job-date">2021/08 - Now</p>
+          <p class="job-date">2021/08 - 2023/04</p>
           <div class="job-description">
             負責部門內有關伺服器後台及前台之業務
             <ol>
@@ -108,8 +188,8 @@
     <router-link to="/Slashie">
       <i class="fa-solid fa-code"></i>開啟協槓經歷頁面
     </router-link>
-    <div class="hr-style" style="margin: 2rem 0;"></div>
-    <h2 class="paragraph">作品集</h2>
+    <!-- <div class="hr-style" style="margin: 2rem 0;"></div>
+    <h2 class="paragraph">作品集</h2> -->
     <div class="hr-style" style="margin: 2rem 0;"></div>
     <h2 class="paragraph">學歷</h2>
     <div class="school-list row">
@@ -127,6 +207,7 @@
           <p>成功大學</p>
           <div class="desp">地球科學所 - 電漿、太空、大氣偶合研究室</div>
           <div class="date">2016/7~2018/7 </div>
+          <label style="font-size: .8em;">論文題目: <b>電離層磁暴與電漿泡效應對全球衛星定位系統之影響</b></label>
         </div>
       </div>
     </div>
@@ -136,6 +217,13 @@
       <ul>
         <li>
           探空儀器製作 - <a href="https://news.ltn.com.tw/news/life/breakingnews/2304828" target="_blank">https://news.ltn.com.tw/news/life/breakingnews/2304828</a>
+        </li>
+        <li>
+          擁有之專利:
+          <ul>
+            <li>雨量計系統: <a href="https://tiponet.tipo.gov.tw/gpss2/gpsskmc/gpssbkm?!!FRURLTWM633769U" target="_blank">TWM633769U</a></li>
+            <li>水情監測設備: <a href="https://tiponet.tipo.gov.tw/gpss2/gpsskmc/gpssbkm?!!FRURLTWM650854U" target="_blank">TWM650854U</a></li>
+          </ul>
         </li>
       </ul>
     </div>

@@ -10,9 +10,25 @@
     <!-- <router-link to="/MyCat" class="router-link-tag">
       <i class="fa-solid fa-cat"></i>
     </router-link> -->
-    <router-link to="/Slashie" class="router-link-tag">
+
+    <div class="router-link-list-group">
+      <router-link to="/Slashie" class="router-link-list-icon router-link-tag">
+        <i class="fa-solid fa-code"></i>
+      </router-link>
+      <!-- <ul class="router-link-list" >
+        <li>
+          <router-link class="router-link-tag" to="/Slashie/Test">
+            <i class="fa-regular fa-bell"></i>
+          </router-link>
+        </li>
+      </ul> -->
+
+    </div>
+
+
+    <!-- <router-link to="/Slashie" class="router-link-tag">
       <i class="fa-solid fa-code"></i>
-    </router-link>
+    </router-link> -->
     <!-- <div class="router-link-list-group">
       <div class="router-link-list-icon router-link-tag">
         <i class="fa-solid fa-swatchbook"></i>
@@ -27,7 +43,7 @@
       </ul>
     </div> -->
 
-    <div class="router-link-list-group">
+    <div class="router-link-list-group" v-if="false">
       <!-- <router-link to="/SampleComposes" class="router-link-list-icon router-link-tag">
         <i class="fa-solid fa-sitemap"></i>
       </router-link> -->
